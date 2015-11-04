@@ -1,0 +1,412 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="FrenchFit, actualité musculation, tutorial, forum, communauté">
+	<meta name="author" content="HUSSON Floran, MEZIERE Kevin">
+
+	<title>FrenchFit | News, actualité sur le monde du bodybuilding</title>
+
+	<!-- Loading bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Loading our stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Loading Font Awesome -->
+	<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<header id="header">
+		<nav role="navigation" class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">FrenchFit</a>
+				</div>
+				<!-- Collection of nav links and other content for toggling -->
+				<div id="navbarCollapse" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">News</a></li>
+						<li><a href="forum_topic.html">Forum</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="membre.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Floran <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+							</li>
+					</ul>
+				</div> <!-- /.navbar-header -->
+			</div> <!-- /.container -->
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="boxed">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 col-md-10">
+					<div class="col-lg-12 col-sm-12">
+						<div class="card hovercard">
+							<div class="card-background">
+								<img class="card-bkimg" alt="" src="img/thumbs_member/thumb6.jpg">
+								<!-- http://lorempixel.com/850/280/people/9/ -->
+							</div>
+							<div class="useravatar">
+								<img alt="" src="img/thumbs_member/thumb6.jpg">
+							</div>
+							<div class="card-info"> <span class="card-title">Floran &laquo; yes-man &raquo; HUSSON</span>
+
+							</div>
+						</div>
+						<div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<button type="button" id="stars" class="btn btn-danger" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<div class="hidden-xs">Informations</div>
+								</button>
+							</div>
+							<div class="btn-group" role="group">
+								<button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+									<div class="hidden-xs">Timeline</div>
+								</button>
+							</div>
+							<div class="btn-group" role="group">
+								<button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+									<div class="hidden-xs">Following</div>
+								</button>
+							</div>
+						</div>
+
+						<div class="well">
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="tab1">
+									<div class="row">
+										<p class="bg-danger">Résumé :</p>
+											<div class="col-lg-6 col-sm-6">
+												<div><span class="infouser text-uppercase">Prénom : </span>Floran</div>
+												<div><span class="infouser text-uppercase">Age : </span>22</div>
+												<div><span class="infouser text-uppercase">Sexe : </span>Masculin</div>
+												<div><span class="infouser text-uppercase">Location : </span>Louvain-La-Neuve</div>
+												<div><span class="infouser text-uppercase">Gym : </span><a href="gym.html">Jims-Fitness LLN</a> <i class="fa fa-check-circle"></i></div>
+											</div>
+											<div class="col-lg-6 col-sm-6">
+							  					<div><span class="infouser text-uppercase">Taille : </span>1m73</div>
+							  					<div><span class="infouser text-uppercase">Poids : </span>67kg</div>
+							  					<div><span class="infouser text-uppercase">OBJECTIF : </span>73kg ~10% BF</div>
+											</div>
+											<div class="clos-lg-12 col-sm-12">
+												<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+											</div>
+									</div>
+									<div class="row">
+										<p class="bg-danger">Photos :</p>
+										<div class="col-lg-12 col-sm-12">
+											<div class="col-lg-4 col-sm-4">
+												Avant<br>
+												<img class="img-thumbnail" src="img/thumbs_member/mem1.jpg">
+											</div>
+											<div class="col-lg-4 col-sm-4">
+												Maintenant<br>
+												<img class="img-thumbnail" src="img/thumbs_member/mem3.jpg">
+											</div>
+											<div class="col-lg-4 col-sm-4">
+												Toutes les photos<br>
+												<img class="img-rounded" src="img/thumbs_member/mem1.jpg">
+												<img class="img-rounded" src="img/thumbs_member/mem1.jpg">
+												<img class="img-rounded" src="img/thumbs_member/mem1.jpg">
+												<img class="img-rounded" src="img/thumbs_member/mem1.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<p class="bg-danger">Programme / Diète :</p>
+										<div class="col-lg-6 col-sm-6">
+											<div class="text-center">
+												<p>
+													Lundi : <span class="text-danger text-uppercase">Pectoraux Triceps</span>
+													<div class="text-muted" data-toggle="tooltip" title="5*8@36kg" data-placement="bottom">Développé Incliné Haltère</div>
+													<div class="text-muted" data-toggle="tooltip" title="5*12@16kg" data-placement="bottom">Ecartés inclinés</div>
+													<div class="text-muted" data-toggle="tooltip" title="3*12@40kg" data-placement="bottom">Dips lestés</div>
+													<div class="text-muted" data-toggle="tooltip" title="3*15@30kg" data-placement="bottom">Pull-Over</div>
+													<div class="text-muted" data-toggle="tooltip" title="7*12@20kg 30s" data-placement="bottom">Ecartés poulie vis-à-vis</div>
+												</p>
+												<p>
+													Mardi : <span class="text-danger text-uppercase">Dos Biceps</span>
+													<div class="text-muted">Soulevé de Terre</div>
+													<div class="text-muted">Tractions lestées prise large</div>
+													<div class="text-muted">Rowing Haltère</div>
+													<div class="text-muted">Tirage neutre poulie basse</div>
+													<div class="text-muted">Pull-Over Poulie</div>
+												</p>
+												<p>
+													Mercredi : <span class="text-danger text-uppercase">Jambes</span>
+													<div class="text-muted">Squat</div>
+													<div class="text-muted">Front-Squat</div>
+													<div class="text-muted">Presse horizontale</div>
+													<div class="text-muted">Leg Curl</div>
+													<div class="text-muted">Leg Extension assis</div>
+													<div class="text-muted">Mollets (machine)</div>
+												</p>
+												<p>
+													Jeudi : <span class="text-danger text-uppercase">Epaules (+ Rappel Pecs)</span>
+													<div class="text-muted">Développé Incliné Haltère</div>
+													<div class="text-muted">Ecartés inclinés</div>
+													<div class="text-muted">Développé Haltère</div>
+													<div class="text-muted">Elevations frontales</div>
+													<div class="text-muted">Rowing Menton</div>
+													<div class="text-muted">Elevations Latérales</div>
+													<div class="text-muted">Shrugs</div>
+													<div class="text-muted">Oiseau</div>
+												</p>
+												<p>
+													Vendredi : <span class="text-danger text-uppercase">Biceps Triceps</span>
+													<div class="text-muted">Curl Barre SS Barre Front</div>
+													<div class="text-muted">Curl Incliné SS Extensions Triceps</div>
+													<div class="text-muted">Curl Poulie SS Extensions Poulie</div>
+													<div class="text-muted">Curl Poulie vis-à-vis SS Extensions Poulie Unilatérale</div>
+												</p>
+												<p>
+													Samedi : <span class="text-danger text-uppercase">Repos</span>
+												</p>
+												<p>
+													Dimanche : <span class="text-danger text-uppercase">Jambes</span>
+													<div class="text-muted">Front-Squat</div>
+													<div class="text-muted">Fentes</div>
+													<div class="text-muted">Presse Horizontale Unilatéral</div>
+													<div class="text-muted">Leg Curl</div>
+													<div class="text-muted">Leg Extension assis</div>
+													<div class="text-muted">Mollets (machine)</div>
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-6 col-sm-6">
+											<div class="text-center">
+												<p>
+													Matin :
+													<div class="text-muted">3 oeufs</div>
+													<div class="text-muted">120gr avoine</div>
+													<div class="text-muted">150gr fromage blanc</div>
+												</p>
+												<p>
+													Collation 1 :
+													<div class="text-muted">30gr whey NM</div>
+													<div class="text-muted">20gr amande</div>
+													<div class="text-muted">1 pomme</div>
+												</p>
+												<p>
+													Midi :
+													<div class="text-muted">100gr steak haché 5%</div>
+													<div class="text-muted">80gr riz complet</div>
+													<div class="text-muted">100gr lentilles</div>
+													<div class="text-muted">150gr brocolis</div>
+												</p>
+												<p>
+													Pré-workout :
+													<div class="text-muted">C4 pré-workout</div>
+													<div class="text-muted">1 banane</div>
+												</p>												
+												<p>
+													Post-workout :
+													<div class="text-muted">40gr whey NM</div>
+													<div class="text-muted">1 banane</div>
+													<div class="text-muted">5 caps BCAA NM</div>
+												</p>
+												<p>
+													Soir :
+													<div class="text-muted">30gr whey NM</div>
+													<div class="text-muted">100gr pâtes</div>
+													<div class="text-muted">200gr haricots verts</div>
+												</p>
+												<p>
+													Collation 3 :
+													<div class="text-muted">20gr amande</div>
+													<div class="text-muted">250gr fromage blanc</div>
+												</p>
+												<p>
+													Total :
+													<span class="text-danger text-uppercase macro">2630 kcal</span>
+													<span class="text-danger text-uppercase macro">350gr glucides</span>
+													<span class="text-danger text-uppercase macro">150gr protéines</span>
+													<span class="text-danger text-uppercase macro">70gr lipides</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade in" id="tab2">
+									<h3 class="text-center">Evolution timeline</h3>
+									<div class="timelineBar"></div>
+									<div class="timeline">
+									  <dl>
+											<dt>Avril 2015</dt>
+											<dd class="pos-right clearfix">
+												<div class="circ"></div>
+												<div class="time">29 Avril</div>
+												<div class="events">
+													<div class="pull-left">
+														<img class="events-object img-rounded" src="img/thumbs_member/mem3.jpg">
+													</div>
+													<div class="events-body">
+														<h4 class="events-heading">Semaine 12, sèche is over</h4>
+														<p>Le résultat qui fait extrêmement plaisir à la fin de la sèche. On va pouvoir repartir sur une PDM lente afin d'éviter tout gras.</p>
+													</div>
+												</div>
+											</dd>
+											<dd class="pos-left clearfix">
+												<div class="circ"></div>
+												<div class="time">01 Avril</div>
+												<div class="events">
+													<div class="pull-left">
+														<img class="events-object img-rounded" src="img/thumbs_member/mem2.jpg">
+													</div>
+													<div class="events-body">
+														<h4 class="events-heading">Semaine 7</h4>
+														<p>La sèche suit son cours et fonctionne très bien, la partie la plus difficile arrive mais la confiance est là. Plus d'info sur la sèche. 
+														<br><br>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Ma diète</button>
+
+														<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+															<div class="modal-dialog modal-sm">
+																<div class="modal-content">
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																	Banane 100gr 4times a day whatever it takes<br>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+										  </dd>
+										  <dt>Février 2015</dt>
+										  <dd class="pos-right clearfix">
+												<div class="circ"></div>
+												<div class="time">10 Février</div>
+												<div class="events">
+													<div class="pull-left">
+														<img class="events-object img-rounded" src="img/thumbs_member/mem1.jpg">
+													</div>
+													<div class="events-body">
+														<h4 class="events-heading">Début sèche</h4>
+														<p>3 mois de sèche intensive qui débute.</p>
+													</div>
+												</div>
+											</dd>
+										</dl>
+									</div>
+								</div>
+								<div class="tab-pane fade in" id="tab3">
+									<h3>This is tab 3</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Loading jQuery v1.11.3 -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<!-- Loading bootstrap v3.3.5 -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Loading CanvasJS v1.11.3 -->
+	<script type="text/javascript" src="js/jquery.canvasjs.min.js"></script>
+	<script type="text/javascript">
+$(function () {
+	//Better to construct options first and then pass it as a parameter
+	var options = {
+		title: {
+			text: "Graphique de progression"
+		},
+		axisY: {
+				title: "Poids",
+				minimum: 40,
+				suffix: " kg"
+			},
+			axisX: {
+				valueFormatString: "MMM YY"
+			},
+                animationEnabled: true,
+		data: [
+		{
+			toolTipContent: "{y} kg",
+			name: "Kilogrammes",
+			type: "line", //change it to line, area, column, pie, etc
+			showInLegend: true,
+			color: "rgb(217,83,79)",
+			markerSize: 5,
+			dataPoints: [
+				{ x: new Date(2013,05, 01), y: 57 },
+				{ x: new Date(2014,09, 01), y: 68 },
+				{ x: new Date(2015,04, 01), y: 63 },
+				{ x: new Date(2015,10, 01), y: 67 }
+			]
+		}
+		]
+	};
+
+	$("#chartContainer").CanvasJSChart(options);
+
+});</script>
+
+	<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+	});
+
+	$(document).ready(function() {
+		$(".btn-pref .btn").click(function () {
+			$(".btn-pref .btn").removeClass("btn-danger").addClass("btn-default");
+			// $(".tab").addClass("active"); // instead of this do the below 
+			$(this).removeClass("btn-default").addClass("btn-danger");   
+		});
+	});
+
+	var checkeventcount = 1,prevTarget;
+	$('.modal').on('show.bs.modal', function (e) {
+		if(typeof prevTarget == 'undefined' || (checkeventcount==1 && e.target!=prevTarget)) {
+			prevTarget = e.target;
+			checkeventcount++;
+			e.preventDefault();
+			$(e.target).appendTo('body').modal('show');
+		}
+		else if(e.target==prevTarget && checkeventcount==2) {
+			checkeventcount--;
+		}
+	});
+</script>
+</body>
+</html>
